@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Micro+5&display=swap" rel="stylesheet">
+
+  <title>Pocket Cinétique</title>
+
+</head>
+
+<body>
+
+  <header>
+    <h1>Pocket Cinétique</h1>
+  </header>
+
+
+  <section>
+
+    <div id="bars" class="mechanicsWrapper">
+
+      <h2 id="sin">Sin: </h2>
+      <svg width="100%" height="20" xmlns="http://www.w3.org/2000/svg">
+          <rect id="sinRect" width="10" height="20" x="0" y="0" rx="0" ry="0" fill="blue" />
+      </svg>
+  
+      <h2 id="cos">Cos: </h2>
+      <svg width="100%" height="20" xmlns="http://www.w3.org/2000/svg">
+          <rect id="cosRect" width="10" height="20" x="0" y="0" rx="0" ry="0" fill="blue" />
+      </svg>
+  
+      <h2 id="cosPlusOffset">Cos+: </h2>
+      <svg width="100%" height="20" xmlns="http://www.w3.org/2000/svg">
+          <rect id="cosPlusOffsetRect" width="10" height="20" x="0" y="0" rx="0" ry="0" fill="blue" />
+      </svg>
+  
+      <h2 id="random">Ran: </h2>
+      <svg width="100%" height="20" xmlns="http://www.w3.org/2000/svg">
+          <rect id="ranRect" class="smoothAnimation" width="10" height="20" x="0" y="0" rx="0" ry="0" fill="blue" />
+      </svg>
+  
+      <h2 id="counter">Counter: </h2>
+      <svg width="100%" height="20" xmlns="http://www.w3.org/2000/svg">
+          <rect id="counterRect" width="10" height="20" x="0" y="0" rx="0" ry="0" fill="blue" />
+      </svg>
+  
+      <h2 id="hypot">Hypot: </h2>
+      <svg width="100%" height="20" xmlns="http://www.w3.org/2000/svg">
+          <rect id="hypotRect" width="10" height="20" x="0" y="0" rx="0" ry="0" fill="blue" />
+      </svg>
+  
+      <h2 id="log">log: </h2>
+      <svg width="100%" height="20" xmlns="http://www.w3.org/2000/svg">
+          <rect id="logRect" width="10" height="20" x="0" y="0" rx="0" ry="0" fill="blue" />
+      </svg>
+  
+      <h2 id="logWithSine">log+Sine: </h2>
+      <svg width="100%" height="20" xmlns="http://www.w3.org/2000/svg">
+          <rect id="logWithSineRect" width="10" height="20" x="0" y="0" rx="0" ry="0" fill="blue" />
+      </svg>
+
+      <h2 class="spacer">Color One</h2>
+      <svg width="200" height="100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <rect id="colorRectOne" x="10" y="10" width="180" height="80" fill="black"/>
+      </svg>
+
+      <h2>Color Two</h2>
+      <svg width="200" height="100" version="1.1" xmlns="http://www.w3.org/2000/svg">
+        <rect id="colorRectTwo" x="10" y="10" width="180" height="80" fill="black"/>
+      </svg>
+
+    </div>
+
+    <div id="circles" class="mechanicsWrapper centerText">
+      
+      <h2>Circle One</h2>
+      <svg height="80" width="80" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circleOne" r="40" cx="40" cy="40" fill="red" />
+      </svg> 
+
+      <h2>Circle two</h2>
+      <svg height="80" width="80" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circleTwo" r="40" cx="40" cy="40" fill="red" />
+      </svg> 
+
+      <h2>Circle Three</h2>
+      <svg height="80" width="80" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circleThree" r="40" cx="40" cy="40" fill="red" />
+      </svg> 
+
+      <h2>Circle Four</h2>
+      <svg height="80" width="80" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circleFour" class="smoothAnimation" r="40" cx="40" cy="40" fill="red" />
+      </svg> 
+
+      <h2>Circle Five</h2>
+      <svg height="80" width="80" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circleFive" r="40" cx="40" cy="40" fill="red" />
+      </svg> 
+
+      <h2>Circle Six</h2>
+      <svg height="80" width="80" xmlns="http://www.w3.org/2000/svg">
+        <circle id="circleSix" r="40" cx="40" cy="40" fill="red" />
+      </svg> 
+    
+    </div>
+
+    <div id="polylines" class="mechanicsWrapper centerText">
+
+      <h2>Polyline One</h2>
+      <svg height="100" width="200" xmlns="http://www.w3.org/2000/svg">
+        <polyline id="polylineOne" points="25,50 50,100 75,50 100,100 125,50 150,100"/>
+      </svg>
+      
+      <h2>Polyline two</h2>
+      <svg height="100" width="200" xmlns="http://www.w3.org/2000/svg">
+        <polyline id="polylineTwo" points="25,50 50,100 75,50 100,100 125,50 150,100"/>
+      </svg> 
+
+      <h2>Polyline Three</h2>
+      <svg height="100" width="200" xmlns="http://www.w3.org/2000/svg">
+        <polyline id="polylineThree" points="25,50 50,100 75,50 100,100 125,50 150,100"/>
+      </svg> 
+
+      <h2>Polyline Four</h2>
+      <svg height="150" width="200" xmlns="http://www.w3.org/2000/svg">
+        <polyline id="polylineFour" points="25,50 50,100 75,50 100,100 125,50 150,100"/>
+      </svg> 
+
+      <h2>Polyline Five</h2>
+      <svg height="150" width="200" xmlns="http://www.w3.org/2000/svg">
+        <polyline id="polylineFive" points="25,50 50,100 75,50 100,100 125,50 150,100"/>
+      </svg> 
+
+    </div>
+
+    <div id="antsWrapper" class="mechanicsWrapper centerText">
+
+      <h2 id="antsLabel">Ants: Linear</h2>
+      <svg height="750" width="200" xmlns="http://www.w3.org/2000/svg">      
+        <rect id="ants" x="25" y="25" width="150" height="700" rx="15" />
+      </svg>
+      
+    </div>
+
+  </section>
+
+  <script src="main.js" type="module"></script>
+  
+</body>
+</html>

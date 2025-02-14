@@ -1,0 +1,225 @@
+body {
+    background-color: yellow;
+    font-family: "Micro 5", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.statusBar {
+    padding: 1rem;
+}
+
+section {
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    margin: 1rem;
+}
+
+.mechanicsWrapper {
+    grid-column: span 1;
+    border: 3px solid black;
+    padding: 1rem;
+}
+
+header {
+    margin: 1rem;
+}
+
+h1 {
+    font-size: 3rem;
+    margin: 0rem 0;
+}
+
+h2 {
+    font-size: 2rem;
+    margin: 0;
+}
+
+#bars .spacer {
+    margin-top: 3rem;
+}
+
+.centerText {
+    text-align: center;
+}
+
+#circles h2 {
+    margin: .4rem;
+}
+
+.smoothAnimation {
+    transition-duration: 1s;
+}
+
+polyline {
+    fill: none;
+    stroke: green;
+    stroke-width: 20;
+    stroke-linejoin: miter;
+    stroke-miterlimit: 100;
+}
+
+/* Toggle Animation */
+/* //////////////// */
+
+.switch {
+    position: relative;
+    display: inline-block;
+    width: 60px;
+    height: 34px;
+}
+  
+  .switch input { 
+    opacity: 0;
+    width: 0;
+    height: 0;
+  }
+  
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #ccc;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  .slider:before {
+    position: absolute;
+    content: "";
+    height: 26px;
+    width: 26px;
+    left: 4px;
+    bottom: 4px;
+    background-color: white;
+    -webkit-transition: .4s;
+    transition: .4s;
+  }
+  
+  input:checked + .slider {
+    background-color: #2cf321;
+  }
+  
+  input:focus + .slider {
+    box-shadow: 0 0 1px #2196F3;
+  }
+  
+  input:checked + .slider:before {
+    -webkit-transform: translateX(26px);
+    -ms-transform: translateX(26px);
+    transform: translateX(26px);
+  }
+
+
+
+/* Marching Ants */
+/* ///////////// */
+
+.marchingAntsLinear {
+    fill: none;
+    stroke: #e20fb8;
+    stroke-miterlimit: 10;
+    stroke-width: 20px;
+    stroke-dasharray: 30;
+    animation: antsLinear 5s infinite;
+    animation-timing-function: linear;
+  }
+
+  @keyframes antsLinear {
+    to {
+      stroke-dashoffset: 500;
+    }
+}
+
+.marchingAntsEase {
+    fill: none;
+    stroke: #e20fb8;
+    stroke-miterlimit: 10;
+    stroke-width: 20px;
+    stroke-dasharray: 30;
+    animation: antsEase 4s infinite;
+    animation-timing-function: ease;
+  }
+
+  @keyframes antsEase {
+    to {
+      stroke-dashoffset: 1000;
+    }
+}
+
+.marchingAntsBezierOne {
+    fill: none;
+    stroke: #e20fb8;
+    stroke-miterlimit: 10;
+    stroke-width: 20px;
+    stroke-dasharray: 30;
+    animation: antsBezierOne 5s infinite;
+    animation-timing-function: cubic-bezier(0.05,0.9,0,1);
+  }
+
+  @keyframes antsBezierOne {
+    to {
+      stroke-dashoffset: 500;
+    }
+}
+
+.marchingAntsBezierTwo {
+    fill: none;
+    stroke: #e20fb8;
+    stroke-miterlimit: 10;
+    stroke-width: 20px;
+    stroke-dasharray: 30;
+    animation: antsBezierTwo 5s infinite;
+    animation-timing-function: cubic-bezier(1,0,0,1);
+  }
+
+  @keyframes antsBezierTwo {
+    to {
+      stroke-dashoffset: 500;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+/* ///////////////////////////////////// */
+
+@media only screen and (max-width: 1080px) {
+
+    section {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
+
+    #antsWrapper {
+        grid-column: span 3;
+    }
+} 
+
+@media only screen and (max-width: 775px) {
+
+    section {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    #antsWrapper {
+        grid-column: span 1;
+    }
+}
+
+@media only screen and (max-width: 560px) {
+
+    section {
+        grid-template-columns: 1fr;
+    }
+} 
